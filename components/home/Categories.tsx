@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const categories = [
     {
         name: "Cotton Fabrics",
-        image: "/images/co1.Webp",
+        image: "/images/co1.jpg",
     },
     {
         name: "Silk Fabrics",
