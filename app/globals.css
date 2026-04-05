@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
+/* 🎨 PISON CLOTHING EXPORT PALETTE */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #EFD4C4;
+  /* almond */
+
+  --dark: #4E0714;
+  /* dark scarlet */
+  --primary: #781727;
+  /* antique ruby */
+  --secondary: #AC5B67;
+  /* deep puce */
+
+  --soft: #E2B3C2;
+  /* pink pearl */
+
+  --text-main: #2A0D12;
+  --text-muted: #7A3F48;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 🌍 GLOBAL */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* background: var(--background); */
+  color: var(--text-main);
+}
+
+/* 💎 PREMIUM CARD */
+.card {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #f1d6db;
+  padding: 20px;
+}
+
+/* ✨ HOVER */
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(120, 23, 39, 0.15);
+}
+
+/* 🔘 PRIMARY BUTTON */
+.btn {
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background: var(--dark);
+}
+
+/* 🔘 DARK BUTTON */
+.btn-dark {
+  background: var(--dark);
+  color: white;
+}
+
+.btn-dark:hover {
+  background: #2b0209;
+}
+
+/* 🔘 OUTLINE BUTTON */
+.btn-outline {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* 🧾 INPUT */
+.input4 {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+
+  background: #ffffff;
+  border: 1px solid #e5c2c8;
+
+  font-size: 14px;
+  color: var(--text-main);
+
+  outline: none;
+}
+
+/* focus */
+.input4:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(120, 23, 39, 0.2);
+}
+
+/* ✨ SMOOTH UI */
+* {
+  transition: all 0.2s ease;
 }
