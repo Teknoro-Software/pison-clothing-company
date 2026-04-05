@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Global Traders",
-  description: "Global Traders",
+  title: "Pison Clothing Company",
+  description: "Pison Clothing Company",
 };
 
 export default function RootLayout({
