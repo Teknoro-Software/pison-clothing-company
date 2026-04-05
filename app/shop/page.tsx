@@ -10,7 +10,7 @@ const products = [
     name: "Cotton Fabric Roll",
     price: "₹52,500 / roll",
     category: "Cotton",
-    image: "/images/c1.webp",
+    image: "/images/co1.jpg",
   },
   {
     id: 2,
